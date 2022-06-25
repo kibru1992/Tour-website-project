@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="our.css">
+    <script src="index.js"></script>
+   <style>
+     body{
+       background-image: url("dalol.jpg");
+       background-repeat: no-repeat;
+       width: 100vh;
+       height: 100vh;
+     }
+     .btn2{
+       width: 30px;
+       background-color: rgba(255, 166, 0, 0.692);
+       display: block;
+       padding: 5px;
+       font-size: 20px;
+       width: 150px;
+       text-align: center;
+       margin: 20px;
+
+     }
+     .btn2:hover{
+       background-color:rgba(255, 166, 0, 0.884) ;
+       margin-left: 20px;
+       transform: scale(1.2);
+       cursor: pointer;
+     }
+input{
+  background: rgba(255, 255, 255, 0.301);
+  
+}
+input[type="email"]:focus,input[type="password"]:focus{
+  border: none;
+ 
+ outline: none;
+ border-bottom: 1px solid green;
+}
+   span{
+     color: orange;
+   }
+  form p{
+    color: orange;
+  }
+  #pp{
+    color: red;
+    font-size:30px;
+    background-color: rgba(0, 0, 0, 0.288);
+    display: inline;
+
+    width: 400px;
+    margin: 10px auto;
+  }
+   </style>
+</head>
+<body>
+  
+ 
+    <div class="login-form">
+      
+        <i class="fas fa-times" id="form-close"></i>
+  
+        <form action="english.html" onsubmit="return login()">
+          
+          <h3><span>Ethio</span> Tour and Travel</h3>
+          <h3>login</h3>
+          <input type="email" class="box" placeholder="enter your email" id="email" />
+          <input type="password" class="box" placeholder="enter your password" id="pass" />
+          <input type="submit" value="login" class="btn2" />
+          <span id="pp" ></span>
+          
+        </form>
+      </div>
+    
+</body>
+</html>

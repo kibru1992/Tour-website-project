@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="our.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css" />
+    <!-- we have added font awesome icons -->
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="menu-bar"></div>
+
+      <a href="#" class="logo"><span>Ethio</span>Tour and Travel</a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href=""></a>
+        <a style="margin-left: 30px" href="index.html"
+          >sign in <i class="fas fa-sign-in"></i
+        ></a>
+      </nav>
+      <div class="fix">
+        <!-- add social medias here -->
+        <i class="fab fa-facebook" id="login-btn"></i>
+        <i class="fab fa-twitter" id="login-btn"></i>
+        <i class="fab fa-youtube" id="login-btn"></i>
+      </div>
+      <div class="icons"></div>
+
+      <!-- <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search place here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form> -->
+    </header>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>VISIT ETHIOPIA with US</p>
+        <a href="#packages" class="btn btn2">discover more</a>
+      </div>
+      <div class="img-container">
+        <img src="dalol.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- book section starts  -->
+
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="dalol.jpg" alt="" />
+          <!-- i -->
+        </div>
+
+        <form onSubmit="return validate()" action="book.php" method="post">
+          <div class="inputBox">
+            <h3>where to</h3>
+            <input
+              id="place1"
+              type="text"
+              placeholder="place name"
+              name="name"
+            />
+          </div>
+          <div class="inputBox">
+            <h3>how many</h3>
+            <input
+              id="count"
+              type="number"
+              placeholder="number of guests"
+              name="guests"
+            />
+          </div>
+          <div class="inputBox">
+            <h3>arrivals</h3>
+            <input id="date1" type="date" name="arrival" />
+          </div>
+          <div class="inputBox">
+            <h3>leaving</h3>
+            <input id="date2" type="date" name="leaving" />
+          </div>
+          <input type="submit" class="btn1 btn" id="kib" value="book now" />
+          <span id="error"></span>
+        </form>
+      </div>
+    </section>
+
+    <!-- book section ends -->
+
+    <!-- packages section starts  -->
+
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="image/sofumer3.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Sofumer Cave </h3>
+            <p>
+              Amazing combinations of nature and water Bale,sofumer cave!!!!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">26,000ETB <span>36,000ETB</span></div>
+            <a href="#book" class="btn1 btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/axum1.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> AXUM</h3>
+            <p>
+              Come and Visit AXUM Where African Civilization Begins
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">15,000ETB <span>25,000ETB</span></div>
+            <a href="#book" class="btn1 btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/lalibela2.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> LALIBELA</h3>
+            <p>
+              11 genuie rock-hewn churches of lalibela ,come and discover!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">23,500ETB <span>25,000ETB</span></div>
+            <a href="#book" class="btn1 btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/semen1.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Semen Mountain National Park</h3>
+            <p>
+              Diverse flora & fauna of the Northern Ethiopian belongs to Here
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">36,000ETB <span>43,500ETB</span></div>
+            <a href="#book" class="btn1 btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/ertale2.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> ERTEALE</h3>
+            <p>
+              Experince the magnificent power of volcanic eruption in Afar!!!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">42,000ETB <span>58,000ETB</span></div>
+            <a href="#book" class="btn1 btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/chebera2.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Chebra-chuchura National Park </h3>
+            <p>
+              Come and See The Wonderful Nature of the south-west ethiopian green forests
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">30,000ETB <span>34500ETB</span></div>
+            <a href="#book" class="btn1 btn">book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>affordable hotels</h3>
+          <p>
+            <p>We have a sustain and secured hotel rooms on the way to the desired destiantion.our hotels are classy and pretty Modernized </p>
+
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>food and drinks</h3>
+          <p>
+            As you wish and order our organization is willing to serve and accept your order 24/7
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>safty guide</h3>
+          <p>
+            we setup sustainable security for our customers besides the country's defence while voyaging across the landmasses,rely on us!!!!!
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-globe-asia"></i>
+          <h3>around the world</h3>
+          <p>
+            you can access our website every where any time you want and with the help of our co-companies we also have voyages around the world
+          </p>
+        </div>
+        <div class="box">
+          <i class="fa fa-plane"></i>
+          <h3>fastest travel</h3>
+          <p>
+            Travelling is our profession. we have sustainable cars and roads to the destinations and our workers are 24/7 Avaliable.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-hiking"></i>
+          <h3>adventures</h3>
+          <p>
+            Adventures of Ethiopia are numerous as well as magnificent for the visitors from the valleys to the high mountains,from the rivers to the lakes.all are awaitiing for you!!!!!!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="jj.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place of abayi which is found in 
+              ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn btn1">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="lali.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place of lalibela which is found in 
+              ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn btn1">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="ee.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place erteale which is found in 
+              ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn btn1">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="dd.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place which is found in 
+              ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn1 btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="cc.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place which is found in 
+              north ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn1 btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="men.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place  which is found in 
+              north ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn1 btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="aa.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place and the beauty of semen 
+              ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn1 btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="cca.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place which is found in 
+              afar ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn1 btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="gg.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              here you see is the most amazing place and the beauty of
+              ethiopia do not miss it travel with us.
+            </p>
+            <a href="#" class="btn1 btn">see more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+      </h1>
+
+      <div class="review-slider">
+        <div class="box">
+          <img src="image/doctor1.jpg" alt="" />
+          <h3>Dr.Alemseged</h3>
+          <p>
+            I am a doctor from black lion hospital who recently get the services of the tour company. i was really fascinated by the whole transport and touring services and i am glad and always in ambition to visit ethiopia with this tour
+                            company
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/user2.jpg" alt="" />
+          <h3>Daniel Kebede</h3>
+          <p>
+            I am a software-enginner from united-tstates ,oklahoma. i came to visit axum and i found the touring company very comforatble and user-freindly.i am sure you will not regret by your choice!!!!! </p>
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/user3.jpg" alt="" />
+          <h3>Meron Geremew</h3>
+          <p>
+            i am a bio-medical student in AA university. I spent my summer in the high heels, mountains and valleys of ethiopia and the service and hospitality
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/user4.jpg" alt="" />
+          <h3>yacob</h3>
+          <p>
+            <p>Hi i am yacob form bole high-school and i am grade 12 student and i got the chance to visit sofumer with the touring company by booking them through this website and i got it marvelous and smart idea to voyage through it in Ethiopia.</p>
+
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/contact-img.svg" alt="" />
+        </div>
+
+        <form action="contact-us.php" method="post" onsubmit="return contact()">
+          <div class="inputBox">
+            <input type="text" placeholder="name" name="name1" id="nan" />
+            <input type="email" placeholder="email" name="email" id="em"/>
+          </div>
+          <div class="inputBox">
+            <!-- <input type="number" placeholder="number" /> -->
+            <input type="text" placeholder="subject" name="subject" id="sub"/>
+          </div>
+          <textarea
+            placeholder="message"
+            name="message"
+            id="mes"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" class="btn1 btn" value="send message" />
+          <span id="conerr"></span>
+        </form>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- brand section  -->
+    <section class="brand-container">
+      <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/1.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="images/2.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="images/3.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="images/4.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="images/5.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="images/6.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            we are ethio tour and travel. our agency can facilitate
+            many touring to different part of ethiopia based on the 
+            desire of the travelers. 
+          </p>
+        </div>
+        <!-- <div class="box"> 
+          <h3>branch locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">japan</a>
+          <a href="#">france</a>
+        </div>
+         -->
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">book</a>
+          <a href="#">packages</a>
+          <a href="#">services</a>
+          <a href="#">gallery</a>
+          <a href="#">review</a>
+          <a href="#">contact</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">Telegram</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+
+      <h1 class="credit">
+        JIT <span> 3<sup>rd</sup> year software enginnering Students 2022 &copy; </span> | all rights
+        reserved!
+      </h1>
+    </section>
+  </body>
+</html>
